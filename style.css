@@ -82,6 +82,7 @@ header::after{
 .mode span{
     font-weight: 600;
     text-decoration: underline;
+    color:black;
 }
 .container{
     background-color: var(--VeryLightGrayLightModeBackground);
