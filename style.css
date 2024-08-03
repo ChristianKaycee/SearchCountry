@@ -207,6 +207,7 @@ header::after{
     border: 1px solid black;
     padding: 5px;
     width: 70px;
+    color:black;
 }
 .contain{
     display: flex;
