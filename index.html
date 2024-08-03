@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Web practice 41</title>
 </head>
 <body>
     <header>
-        <p class="head">Where in the world?</p>
-        <span>Dark Mode</span>
+        <p><i class="fa fa-star star-icon"></i> KingShow</p>
+        <div>
+            <p class="head">Where in the world are you, fam?</p>
+            <button class="mode"><img src="./img/lightbulb.svg" alt="mode"> <span>Dark Mode</span></button>
+        </div>
     </header>
     <div class="container">
         <section class="search-section">
@@ -18,9 +21,12 @@
                 <i class="fa fa-search search-icon"></i>
                 <input type="search" placeholder="Search for a country..." class="search-box">
             </div>
-            <select name="region" id="region">
-                <option value="" disabled selected>Filter by Region</option>
-            </select>
+            <div class="map">
+                <select name="region" id="region">
+                    <option value="all" selected>Filter by Region</option>
+                </select>
+                <button class="map-img"><img src="./img/map.svg" alt="mode">
+            </div>
         </section>
         <section class="main">
         </section>
