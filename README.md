@@ -1,6 +1,5 @@
 # SearchCountry
-This program was created to view details about a specific country, it fetches the country details from a json file. 
-# ( Currently Incomplete )
+This program was created to view details about a specific country, it fetches the country details from a json file.
 # Practice project
 ---
 <a href="https://search-country-pi-one.vercel.app">Live Site Link</a>
