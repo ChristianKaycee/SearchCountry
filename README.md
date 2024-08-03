@@ -3,7 +3,7 @@ This program was created to view details about a specific country, it fetches th
 # ( Currently Incomplete )
 # Practice project
 ---
-<a href="[https://christiankaycee.github.io/SearchCountry/](https://search-country-pi-one.vercel.app)">Live Site Link</a>
+<a href=[https://christiankaycee.github.io/SearchCountry/](https://search-country-pi-one.vercel.app)>Live Site Link</a>
 
       -- Made with 💌
          -- By KingShow
