@@ -1,5 +1,6 @@
 # SearchCountry
-This program was created to view details about a specific country, it fetches the country details from a json file. # ( Currntly Incomplete ).
+This program was created to view details about a specific country, it fetches the country details from a json file. 
+# ( Currently Incomplete )
 # Practice project
 ---
 <a href="https://christiankaycee.github.io/SearchCountry/">Live Site Link</a>
