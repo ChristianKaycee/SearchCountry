@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    
+--DarkBlueDarkModeElements: hsl(209, 23%, 22%);
+--VeryDarkBlueDarkModeBackground: hsl(207, 26%, 17%);
+--VeryDarkBlueLightModeText: hsl(200, 15%, 8%);
+--DarkGrayLightModeInput: hsl(0, 0%, 52%);
+--VeryLightGrayLightModeBackground: hsl(0, 0%, 98%);
+--WhiteDarkModeTextLightModeElements: hsl(0, 0%, 100%);
+
+}
+body{
+    background-color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    min-height: 70px;
+    margin: auto;
+}
+.head{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.container{
+    background-color: var(--VeryLightGrayLightModeBackground);
+}
+.search-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    gap: 10px;
+    min-height: 100px;
+}
+.search{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+.search-icon{
+    position: absolute;
+    z-index: 20;
+    top: 12px;
+    left: 5px;
+    color: var(--VeryDarkBlueLightModeText);
+    cursor: pointer;
+    transition: .3s;
+}
+.search-icon:hover{
+    transform: scale(1.1);
+}
+.search-box{
+    padding: 10px;
+    font-size: 1.1em;
+    padding-left: 25px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: 1px solid var(--DarkGrayLightModeInput);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+#region{
+    outline: 1px solid var(--DarkGrayLightModeInput);
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: none;
+    width: 40%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-template-rows: repeat(auto-fill, minmax(230px,1fr));
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+.box{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.box img{
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.content{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.light{
+    font-weight: 200;
+    color: var(--DarkGrayLightModeInput);
+}
+.bold{
+    font-weight: 600;
+}
+.bold:last-child{
+    padding-bottom: 10px;
+}
+.country-details{
+    display: none;
+}
+.country-details{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+}
+.country-details::before{
+    position: relative;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color:var(--VeryDarkBlueLightModeText); 
+}
+.back{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    align-self: flex-start;
+    border: 1px solid black;
+    padding: 5px;
+    width: 50px;
+}
+.contain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.contain img{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+.details-content{
+    display: flex;
+    align-items: center;
+}
+.left,.right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+.border{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+@media (max-width:980px){
+    .contain{
+        flex-direction: column;
+    }
+    .contain img{
+        width: 80%;
+        height: 350px;
+    }
+    .details-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+@media (max-width:580px){
+    .contain img{
+        width: 80%;
+        height: 200px;
+    }
+    .details-content{
+        gap: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .left,.right{
+        width: 100%;
+    }
+}
