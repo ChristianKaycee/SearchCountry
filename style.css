@@ -82,7 +82,7 @@ header::after{
 .mode span{
     font-weight: 600;
     text-decoration: underline;
-    color:black;
+    color: black;
 }
 .container{
     background-color: var(--VeryLightGrayLightModeBackground);
@@ -152,8 +152,9 @@ header::after{
     grid-template-rows: repeat(auto-fill, minmax(230px,1fr));
     width: 90%;
     margin: auto;
+    margin-top: 2rem;
     padding-bottom: 20px;
-    gap: 20px;
+    gap: 2rem;
 }
 .box{
     background-color: #fff;
@@ -204,12 +205,13 @@ header::after{
     border-radius: 5px;
     align-self: flex-start;
     display: flex;
-    align-items:center;
+    align-items: center;
     gap: 10px;
     border: 1px solid black;
     padding: 5px;
     width: 70px;
-    color:black;
+    cursor: pointer;
+    color: black;
 }
 .contain{
     display: flex;
